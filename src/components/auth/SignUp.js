@@ -38,7 +38,7 @@ const SignUp = () => {
                mongoData["phone"] = user.phoneNumber;
             }
 
-            axios.post("/user/signup", mongoData)
+            axios.post("/users/signup", mongoData)
                   .then(res => {
                      if (res.status = 200) {
                         console.log("Created user succesfully:", res.data);
@@ -114,7 +114,7 @@ const SignUp = () => {
                   mongoData["phone"] = formData.phone;
                }
 
-               axios.post("/user/signup", mongoData)
+               axios.post("/users/signup", mongoData)
                   .then(res => {
                      if (res.status = 200) {
                         console.log("Created user succesfully:", res.data);
