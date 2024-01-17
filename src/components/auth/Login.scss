@@ -1,0 +1,40 @@
+.login-form {
+   max-width: 600px;
+   min-width: 150px;
+   form {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      label {
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+         gap: .25rem;
+         span {
+            flex: 0 0 150px;
+         }
+         input {
+            flex: 1 1 auto;
+            padding: .25rem;
+         }
+         .form-message {
+            flex: 1 1 100%;
+            text-align: end;
+            font-size: bold;
+            color: red;
+         }
+      }
+      input {
+         &[type=submit] {
+            padding: .25rem;
+            border: 1px solid #333;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+               background-color: #333;
+               color: #fff;
+            }
+         }
+      }
+   }
+}
