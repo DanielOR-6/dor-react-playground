@@ -239,7 +239,7 @@ const SignUp = () => {
                   onChange={handleInputChange}
                />
             </label>
-            <button type="button" onClick={signUpWithGoogle}>Sign Up with Google</button>
+            <button type="button" onClick={signUpWithGoogle}>Log In with Google</button>
             <input type="submit" value="Sign Up"/>
          </form>
       </section>
